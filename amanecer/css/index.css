@@ -1,0 +1,188 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #FEE9D4; /* Color de fondo cálido */
+}
+.containerPadre{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+}
+
+.container {
+    background-color: #FEDCD2; /* Color del contenedor */
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 2px 6px rgba(0, 0, 0, 0.2);
+}
+
+h1 {
+    text-align: center;
+    color: #E67E22; /* Color del título */
+}
+
+h2,p{
+    color: #D35400;
+}
+
+form div label{
+    color: #E67E22;
+}
+
+.form-group {
+    margin-bottom: 15px;
+}
+
+label {
+    display: block;
+    font-weight: bold;
+    color: #D35400; /* Color de las etiquetas */
+}
+
+input[type="text"],
+input[type="date"] {
+    width: 100%;
+    padding: 8px;
+    border: 1px solid #F39C12; /* Color del borde de los campos */
+    border-radius: 5px;
+}
+
+button {
+    display: block;
+    margin: 0 auto;
+    padding: 10px 20px;
+    background-color: #E67E22; /* Color del botón */
+    color: #FFF; /* Color del texto del botón */
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+button:hover {
+    background-color: #D35400; /* Color del botón al pasar el mouse */
+}
+
+
+header {
+    background-color: #e69d3c; /* Color de fondo del header */
+    padding: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.logo {
+    font-size: 30px;
+    font-weight: bold;
+    color: #fff; /* Color del texto del logo */
+}
+
+nav ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+}
+
+nav li {
+    margin-right: 20px;
+}
+
+nav li:last-child {
+    margin-right: 0;
+}
+
+nav a {
+    text-decoration: none;
+    color: #fff; /* Color del texto de las opciones de navegación */
+    font-size: 16px;
+    transition: color 0.3s ease;
+}
+
+nav a:hover {
+    border-bottom: #ebeb3b solid 2px;
+}
+
+section {
+    padding: 2rem;
+}
+
+.banner {
+    background-size: cover;
+    background-position: center;
+    text-align: center;
+    color: #fff;
+}
+
+footer {
+    background-color: #333;
+    color: #fff;
+    text-align: center;
+    padding: 1rem;
+}
+
+footer p {
+    color: white;
+}
+
+.containerSelect {
+    padding: 20px;
+    border-radius: 8px;
+  }
+  
+  label {
+    font-size: 18px;
+    color: #fff; /* Texto blanco */
+    margin-bottom: 10px;
+  }
+
+  select {
+    width: 200px;
+    height: 30px;
+    font-size: 16px;
+    border: 1px solid #fff; /* Borde blanco */
+    border-radius: 4px;
+    background-color: #F2A87D; /* Naranja suave */
+    color: #fff; /* Texto blanco */
+    padding: 5px;
+  }
+  
+  option {
+    background-color: #F26D5B; /* Rojo anaranjado */
+  }
+
+  select:focus {
+    outline: none;
+    border: 1px solid #F26D5B; /* Resaltar el borde cuando se selecciona */
+  }
+
+  table {
+    border-collapse: collapse;
+    width: 50%;
+    margin: 20px auto;
+  }
+
+  th, td {
+    padding: 10px;
+    text-align: center;
+    border: 1px solid #ccc;
+  }
+
+  th {
+    background-color: #f2c4b4; /* Rosa pastel */
+  }
+
+  td {
+    background-color: #ffe4b5; /* Amarillo pastel */
+  }
+
+  tr:nth-child(even) {
+    background-color: #f0e0d0; /* Beige pastel */
+  }
+
+  tr:nth-child(odd) {
+    background-color: #ffdab9; /* Melocotón pastel */
+  }

@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Amanecer</title>
+    <link rel="stylesheet" href="css/index.css">
+    <script src="js/entities/empleado.js"></script>
+    <script src="js/entities/horaMes.js"></script>
+    <script src="js/index.js"></script>
+    <script src="js/screens/agregarEmpleado.js"></script>
+    <script src="js/screens/agregarHora.js"></script>
+    <script src="js/screens/totalMes.js"></script>
+</head>
+<body>
+    <header>
+        <div class="logo">Amanecer</div>
+        <nav>
+            <ul>
+                <li><a id="btnInicio" href="#">Inicio</a></li>
+                <li><a id="btnRegistrarEmpleado" href="#">Registrar Empleado</a></li>
+                <li><a id="btnRegistrarHoras" href="#">Registrar Horas</a></li>
+                <li><a id="btnMostrarTotalMes" href="#">Total Mes</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <section id="inicio" class="inicio">
+        <div class="banner">
+            <h2>Bienvenido a Amanecer</h2>
+            <p>Somos una empresa de limpieza y porterías de edificios en Uruguay.</p>
+        </div>
+    </section>
+
+
+
+    
+    <div class="containerPadre" id="containerAgregarEmpleado">
+        <div class="container">
+            <h1>Registro Empleado</h1>
+            <form>
+                <div class="form-group">
+                    <label for="nombre">Nombre:</label>
+                    <input type="text" id="inputNombre" name="nombre" required>
+                </div>
+                <div class="form-group">
+                    <label for="apellido">Apellido:</label>
+                    <input type="text" id="inputApellido" name="apellido" required>
+                </div>
+                <div class="form-group">
+                    <label for="fecha">Fecha de ingreso:</label>
+                    <input type="date" id="inputFecha" name="fecha" required>
+                </div>
+                <div class="form-group">
+                    <label for="cedula">Cédula de identidad:</label>
+                    <input type="text" id="inputCi" name="cedula" required>
+                </div>
+                <button id="btnAgregarEmpleado">Registrar</button>
+            </form>
+        </div>
+    </div>
+
+    <div class="containerPadre" id="containerRegistroHoras">
+        <div class="container">
+            <h1>Registrar Horas</h1>
+            <form>
+
+                <div class="containerSelect">
+                    <label for="empleados">Seleccionar Empleado</label>
+                    <select id="selectEmpleado" name="empleados">
+                    </select>
+                  </div>
+                  <div class="form-group">
+                    <label for="fecha">Día:</label>
+                    <input type="date" id="inputDia" name="fecha" required>
+                </div>
+                <div class="form-group">
+                    <label for="entrada">Hora entrada:</label>
+                    <input type="number" id="inputHoraEntrada" name="entrada" required>
+                </div>
+                <div class="form-group">
+                    <label for="salida">Hora salida:</label>
+                    <input type="number" id="inputHoraSalida" name="salida" required>
+                </div>
+                <button id="btnRegistrarHorasEmpleado">Registrar</button>
+                <p id="msg" style="color: rgb(79, 255, 79); font-weight: bold;"></p>
+            </form>
+        </div>
+    </div>
+
+    <div id="containerTabla">
+        <table>
+            <tr>
+              <th>Empleado</th>
+              <th>Mes</th>
+              <th>Cantidad de Horas</th>
+            </tr>
+            <tbody id="table">
+
+            </tbody>
+          </table>
+          
+    </div>
+
+</body>
+</html>
